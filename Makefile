@@ -7,6 +7,8 @@ export GOARCH:=amd64
 
 COMMIT_NUMBER ?= latest
 
+.DEFAULT_GOAL := build
+
 run:
 	docker run -it --rm \
 	--volume "$$HOME/.cache/go-build:/root/.cache/go-build" \
@@ -23,5 +25,5 @@ build:
 
 image: build
 	cp Dockerfile .build
-	cd .build && docker build -t hasansino/kafka-replicator:${COMMIT_NUMBER} -t hasansino/kafka-replicator:latest .
+	cd .build && docker build -t hasansino/kafka-replicator:${COMMIT_NUMBER} .
 	rm -rf .build

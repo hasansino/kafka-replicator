@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/hasansino/kafka-replicator.svg?branch=master)](https://travis-ci.org/hasansino/kafka-replicator)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hasansino/kafka-replicator)](https://goreportcard.com/report/github.com/hasansino/kafka-replicator)
+[![Build Status](https://travis-ci.com/hasansino/kafka-replicator.svg?branch=master)](https://travis-ci.com/hasansino/kafka-replicator)
 
 # Kafka replicator
 
