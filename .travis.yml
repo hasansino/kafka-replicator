@@ -1,1 +1,8 @@
 language: go
+go:
+  - 1.15.x
+  - master
+os:
+  - linux
+env:
+  - GO111MODULE=on
